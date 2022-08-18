@@ -1,10 +1,11 @@
 <script setup>
+import Table from './components/Table.vue';
 </script>
 
 <template>
   <div id="main">
     <div id="head"></div>
-    <div id="body">圣体</div>
+    <div id="body"><Table /></div>
     <div id="end">尾部</div>
   </div>
 </template>
