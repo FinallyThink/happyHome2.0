@@ -1,12 +1,12 @@
 <script setup>
-import Table from './components/Table.vue';
+import Bill from './view/bill/index.vue';
 </script>
 
 <template>
   <div id="main">
     <div id="head"></div>
-    <div id="body"><Table /></div>
-    <div id="end">尾部</div>
+    <div id="body"><Bill/></div>
+    <div id="end"></div>
   </div>
 </template>
 
