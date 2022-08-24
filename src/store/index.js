@@ -1,15 +1,17 @@
 
-import Vuex from 'vuex'
+import {createStore} from 'vuex'
 
 // axios request method
-const files = require.context('./axios', true, /\.js$/)
+const files =  import.meta.globEager('./axios/*.js');
 const modules = {}
 
-files.keys().map(key => {
-  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default
-})
-
-
-export default new Vuex.Store({
-    ...modules,
-})
+for(let key in files){
+    Object.assign(modules,files[key].default)
+}
+export const store = createStore({
+    state () {
+      return {
+        ...modules
+      }
+    }
+  })
