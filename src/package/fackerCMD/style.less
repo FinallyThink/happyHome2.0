@@ -1,0 +1,40 @@
+.fackerCMD {
+    background: #000;
+    width: 100%;
+    color: #fff;
+    padding: .4rem;
+    text-shadow: none;
+    box-sizing: border-box;
+    min-height: 180px;
+    .cursor{
+        display: inline-block;
+        width: .4rem;
+        height: .9rem;
+        transform: translate(0,10%);
+        background: #FFF;
+        margin-left:.2rem;
+        animation: twinkle 1s infinite;      
+    }
+    .hiden{
+        background: #fff;
+        user-select: none;
+        &:hover{
+            background: #000;
+        }
+    }
+}
+
+//背景闪烁动画
+@keyframes twinkle
+{
+    0%  {background: #FFF;}
+    50%  {background: none;}
+    100% {background: #FFF;}
+}
+ 
+@-webkit-keyframes twinkle /* Safari 与 Chrome */
+{
+    0%  {background: #FFF;}
+    50%  {background: none;}
+    100% {background: #FFF;}
+}
