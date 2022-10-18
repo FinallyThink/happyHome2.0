@@ -11,13 +11,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "less": "^4.1.3",
-<<<<<<< HEAD
     "vue": "^3.2.37",
     "vue-router": "^4.1.5",
-=======
-    "mockjs": "^1.1.0",
-    "vue": "^3.2.37",
->>>>>>> 07d119ae8ae02bf3d891218e50be8534caac06ac
     "vuex": "^4.0.2"
   },
   "devDependencies": {
