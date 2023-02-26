@@ -14,7 +14,6 @@ import Header from '@/components/common/header.vue';
 import Footer from '@/components/common/footer.vue';
 </script>
 
-
 <style lang="less" scoped>    
 
 #container{
